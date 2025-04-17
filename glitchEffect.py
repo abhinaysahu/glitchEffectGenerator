@@ -3,16 +3,7 @@ import numpy as np
 import random
 
 def glitch_effect(image_path, intensity=10):
-    """
-    Apply random glitch effects to an image to create glitch art.
-
-    Parameters:
-        image_path (str): Path to the input image.
-        intensity (int): Controls how extreme the glitches are.
-
-    Returns:
-        glitched (numpy.ndarray): The glitched image.
-    """
+    
     # Load image
     img = cv2.imread(image_path)
     if img is None:
